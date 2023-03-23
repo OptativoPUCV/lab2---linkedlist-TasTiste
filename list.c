@@ -40,17 +40,17 @@ List * createList() {
 void * firstList(List * list) {
   list->head->data;
   
-    return void * data;
+    return list->current->data;;
 }
 
 void * nextList(List * list) {
   list->current->next;
-    return void * next;
+    return list->current->next;;
 }
 
 void * lastList(List * list) {
   list->tail->data;
-    return void * data;
+    return list->tail->data;
 }
 
 void * prevList(List * list) {
