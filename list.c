@@ -28,9 +28,9 @@ Node * createNode(void * data) {
     return new;
 }
 
-List * createList(void * head,void * tail,void * current) {
+List * createList() {
   List * new = (List *)malloc(sizeof(List));
-  assert(new != NULL);
+  if (new == NULL) EXIT_FAILURE;
   List->head = data;
   List->tail = NULL;
   List->current = NULL;
