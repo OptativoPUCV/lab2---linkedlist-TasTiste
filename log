@@ -2,3 +2,19 @@ Thu 23 Mar 2023 03:54:50 PM UTC:
  tests:  0|6
 total_score: 0/70
 f561813
+Thu 23 Mar 2023 03:57:19 PM UTC: 
+ list.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:7: error: expected identifier or ‘(’ before ‘->’ token
+   34 |   List->head = data;
+      |       ^~
+list.c:35:7: error: expected identifier or ‘(’ before ‘->’ token
+   35 |   List->tail = NULL;
+      |       ^~
+list.c:36:7: error: expected identifier or ‘(’ before ‘->’ token
+   36 |   List->current = NULL;
+      |       ^~
+Compilation failed
+eedea44
