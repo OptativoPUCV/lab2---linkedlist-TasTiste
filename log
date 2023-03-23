@@ -89,3 +89,43 @@ Thu 23 Mar 2023 03:59:49 PM UTC:
  tests:  1|5
 total_score: 10/70
 d5f34cc
+Thu 23 Mar 2023 04:15:40 PM UTC: 
+ list.c | 10 +++++++---
+ 1 file changed, 7 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:41:13: error: statement with no effect [-Werror=unused-value]
+   41 |   list->head->data;
+      |   ~~~~~~~~~~^~~~~~
+list.c:43:12: error: expected expression before ‘void’
+   43 |     return void * data;
+      |            ^~~~
+list.c: In function ‘nextList’:
+list.c:47:16: error: statement with no effect [-Werror=unused-value]
+   47 |   list->current->next;
+      |   ~~~~~~~~~~~~~^~~~~~
+list.c:48:12: error: expected expression before ‘void’
+   48 |     return void * next;
+      |            ^~~~
+list.c: In function ‘lastList’:
+list.c:52:13: error: statement with no effect [-Werror=unused-value]
+   52 |   list->tail->data;
+      |   ~~~~~~~~~~^~~~~~
+list.c:53:12: error: expected expression before ‘void’
+   53 |     return void * data;
+      |            ^~~~
+list.c: In function ‘firstList’:
+list.c:44:1: error: control reaches end of non-void function [-Werror=return-type]
+   44 | }
+      | ^
+list.c: In function ‘nextList’:
+list.c:49:1: error: control reaches end of non-void function [-Werror=return-type]
+   49 | }
+      | ^
+list.c: In function ‘lastList’:
+list.c:54:1: error: control reaches end of non-void function [-Werror=return-type]
+   54 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+28be11f
