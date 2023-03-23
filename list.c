@@ -31,10 +31,10 @@ Node * createNode(void * data) {
 List * createList() {
   List * new = (List *)malloc(sizeof(List));
   if (new == NULL) EXIT_FAILURE;
-  List->head = data;
+  List->head = NULL;
   List->tail = NULL;
   List->current = NULL;
-  return NULL;
+  return new;
 }
 
 void * firstList(List * list) {

@@ -67,3 +67,19 @@ list.c:36:7: error: expected identifier or ‘(’ before ‘->’ token
       |       ^~
 Compilation failed
 f54f644
+Thu 23 Mar 2023 03:59:37 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:7: error: expected identifier or ‘(’ before ‘->’ token
+   34 |   List->head = NULL;
+      |       ^~
+list.c:35:7: error: expected identifier or ‘(’ before ‘->’ token
+   35 |   List->tail = NULL;
+      |       ^~
+list.c:36:7: error: expected identifier or ‘(’ before ‘->’ token
+   36 |   List->current = NULL;
+      |       ^~
+Compilation failed
+8f6e462
