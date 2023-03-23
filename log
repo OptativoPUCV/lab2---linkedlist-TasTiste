@@ -18,3 +18,36 @@ list.c:36:7: error: expected identifier or ‘(’ before ‘->’ token
       |       ^~
 Compilation failed
 eedea44
+Thu 23 Mar 2023 03:58:07 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c:31:8: error: conflicting types for ‘createList’
+   31 | List * createList(void * head,void * tail,void * current) {
+      |        ^~~~~~~~~~
+In file included from list.c:4,
+                 from test.c:5:
+list.h:6:8: note: previous declaration of ‘createList’ was here
+    6 | List * createList(void);
+      |        ^~~~~~~~~~
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:34:7: error: expected identifier or ‘(’ before ‘->’ token
+   34 |   List->head = data;
+      |       ^~
+list.c:35:7: error: expected identifier or ‘(’ before ‘->’ token
+   35 |   List->tail = NULL;
+      |       ^~
+list.c:36:7: error: expected identifier or ‘(’ before ‘->’ token
+   36 |   List->current = NULL;
+      |       ^~
+test.c: In function ‘test_create’:
+test.c:84:15: error: too few arguments to function ‘createList’
+   84 |     List* L = createList();
+      |               ^~~~~~~~~~
+In file included from test.c:5:
+list.c:31:8: note: declared here
+   31 | List * createList(void * head,void * tail,void * current) {
+      |        ^~~~~~~~~~
+Compilation failed
+8b320f6
