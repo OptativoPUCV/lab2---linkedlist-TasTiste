@@ -31,9 +31,9 @@ Node * createNode(void * data) {
 List * createList() {
   List * new = (List *)malloc(sizeof(List));
   if (new == NULL) EXIT_FAILURE;
-  List->head = NULL;
-  List->tail = NULL;
-  List->current = NULL;
+  new->head = NULL;
+  new->tail = NULL;
+  new->current = NULL;
   return new;
 }
 
