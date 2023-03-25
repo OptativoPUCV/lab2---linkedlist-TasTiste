@@ -148,3 +148,27 @@ list.c:52:13: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 859e4d2
+Sat 25 Mar 2023 09:42:23 PM UTC: 
+ list.c | 16 +++++++++++++---
+ 1 file changed, 13 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c:54:8: error: redefinition of ‘nextList’
+   54 | void * nextList(List * list) {
+      |        ^~~~~~~~
+list.c:47:8: note: previous definition of ‘nextList’ was here
+   47 | void * nextList(List * list) {
+      |        ^~~~~~~~
+list.c: In function ‘nextList’:
+list.c:55:8: error: expected identifier or ‘(’ before ‘=’ token
+   55 |   Node = n;
+      |        ^
+list.c: In function ‘lastList’:
+list.c:61:29: error: expected identifier before ‘)’ token
+   61 |   if(list->current == list->)
+      |                             ^
+list.c:62:13: error: statement with no effect [-Werror=unused-value]
+   62 |   list->tail->data;
+      |   ~~~~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ab90c9b
