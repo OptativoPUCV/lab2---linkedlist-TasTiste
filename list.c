@@ -51,11 +51,6 @@ void * nextList(List * list) {
     return list->current->data;
 }
 
-void * nextList(List * list) {
-  Node = n;
-    return list->current->next;;
-}
-
 void * lastList(List * list) {
   if(list->current == NULL) return NULL;
   if(list->current == list->)

@@ -172,3 +172,17 @@ list.c:62:13: error: statement with no effect [-Werror=unused-value]
 cc1: all warnings being treated as errors
 Compilation failed
 ab90c9b
+Sat 25 Mar 2023 09:46:28 PM UTC: 
+ list.c | 5 -----
+ 1 file changed, 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:56:29: error: expected identifier before ‘)’ token
+   56 |   if(list->current == list->)
+      |                             ^
+list.c:57:13: error: statement with no effect [-Werror=unused-value]
+   57 |   list->tail->data;
+      |   ~~~~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8be6779
